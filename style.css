@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    background: #F6F6F6;
+}
+
+.container {
+    width: 1520px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    margin-top: 5%;
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.left-nav a, .language p{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.06em;    
+    color: #000000;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.right-nav a {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    color:  #4461F2;
+    text-decoration: none;
+
+}
+
+#register {
+    width: 112px;
+    height: 42px;
+    border-radius: 21px;
+    border-color: transparent;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px #0000000D;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    color: #4461F2;
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .text-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15%;
+  }
+
+  .texts h1 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    color: black;
+  }  
+
+
+  .texts p, .texts a {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: black;
+    margin-top: 50px;
+  }
+
+  .texts a {
+    text-decoration: none;
+    color: #4461F2;
+  }
+
+  .eclipse1 {
+    position: absolute;
+    width: 226px;
+    height: 226px;
+    top: 557px;
+    left: 346px;
+  }
+
+  .eclipse2 {
+    position: absolute;
+    width: 226px;
+    height: 226px;
+    top: 291px;
+    left: 142px;
+    opacity: 0.44999998807907104px;
+  }
+
+  .man {
+    position: absolute;
+    width: 545px;
+    height: 449px;
+    top: 372px;
+    left: 660px;
+  }
+
+  .email, .password{
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+  }
+  .password {
+    margin-top: 15px;
+  }
+
+  .email svg, .password svg {
+    position: absolute;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  #email-input, #password-input {
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #EAF0F7;
+    outline: 0;
+    border-color: transparent;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 77px;
+    letter-spacing: 0.09em;
+    color: #4F555A;
+  }
+
+  #email-input::placeholder, #password-input::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 77px;
+    letter-spacing: 0.09em;
+    color: #4F555A;
+  }
+
+  #recPassword {
+    text-decoration: none;
+    color: #C7C7C7;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #formSubmit {
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #4461F2;
+    box-shadow: 0px 12px 21px 4px #4461F226;
+    border-color: transparent;
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+  }
+
+  .lines {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 15px;
+  }
+
+  .line {
+    height: 1px;
+    width: 120px;
+    border-bottom: 1px solid #DFDFDF;
+  }
+
+  .lines p {
+    color: #ACADAC;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 77px;
+    letter-spacing: 0.09em;
+  }
+
+  .social-box {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .apple2 {
+    box-shadow: 0px 10px 13px 0px #00000021;
+    width: 117px;
+    height: 63px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bodyChange {
+    background: #14162E;
+  }
+
+  .text-white {
+    color: white !important;
+  }
+
+  body {
+    transition:  0.5s ease;
+    
+  }
+  
